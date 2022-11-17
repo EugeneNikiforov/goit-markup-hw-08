@@ -1,0 +1,40 @@
+.popup-menu {
+    // display: flex;
+    position: relative;
+    overflow: hidden;
+
+    &__wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transform: translateY(100%);
+        transition: transform var(--time) var(--time-effect);
+    }
+
+    &__btn {
+        justify-content: center;
+        position: absolute;
+        top: 30px;
+        right: 35px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid transparent;
+        background-color: transparent;
+        padding: 0;
+        fill: var(--dark-gray);
+        transition: fill var(--time) var(--time-effect);
+        
+        &:hover,
+        &:focus {
+            fill: var(--selection-color);
+        }
+    }
+
+    &__icon {
+        width: 18px;
+        height: 18px;
+    }
+}

@@ -16,7 +16,13 @@
         <header class="header">
             <div class="container header__container">
             <!-- Name -->            
-                <a class="logo header__logo" href="./index.html">Web<span>Studio</span></a>          
+                <a class="logo header__logo" href="./index.html">Web<span>Studio</span></a>
+                <!-- mobile menu -->
+                <button class="btn btn--header .js-open-menu" type="button">
+                    <svg width="40" height="40">
+                        <use xlink:href="./img/icons.svg#icon-menu_40px"></use>
+                    </svg>
+                </button>          
             <!-- Навігація -->
             <nav>
                 <ul class="nav">
@@ -366,10 +372,21 @@
             </div>
         </footer>
         
-        <!-- menu window -->
-        <!-- <svg class="icon icon-menu_40px">
-            <use xlink:href="./img/icons.svg#icon-menu_40px"></use>
-        </svg> -->
+        <!-- pop-up menu -->
+        <div class="popup-menu .js-menu-container">
+            <div class="popup-menu__wrap">
+                <ul>
+                    <li>Студія</li>
+                    <li>Портфоліо</li>
+                    <li>Контакти</li>
+                </ul>
+                <button class="btn popup-menu__btn .js-close-menu" type="button">
+                    <svg class="popup__icon" width="40" height="40">
+                        <use xlink:href="./img/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
 
         <!-- pop-up window -->
         <div class="backdrop is-hidden" data-modal>
@@ -415,6 +432,7 @@
                 </button>                
             </div>
         </div>
+        <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

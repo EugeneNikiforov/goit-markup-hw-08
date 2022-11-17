@@ -1,6 +1,10 @@
 .header {
     border-bottom: 1px solid var(--white-bord);
     background-color: var(--white-color);
+
+    @media screen and (max-width: 480px) {
+        position: relative;
+    }
     
     &__container {
             display: flex;
