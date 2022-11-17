@@ -13,6 +13,20 @@
     min-width: 216px;
     margin: 0 auto;
     border: none;
+
+    @media screen and (max-width: 480px) {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        padding: 10px 24px;
+        width: 200px;
+        height: 50px;
+    }
 }
 // pop-up form
 .btn--modal-form {

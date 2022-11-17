@@ -3,6 +3,10 @@
     margin-left: auto;
     gap: 30px;
 
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+
     &__link {    
     font-weight: 500;
     font-size: 14px;

@@ -3,6 +3,11 @@
     max-width: 1600px;
     margin: 0 auto;
 
+    @media screen and (max-width: 480px) {
+        display: flex;
+        justify-content: center;
+    }
+
     &--container {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -12,6 +17,12 @@
     text-align: center;
     max-width: 1600px;
     height: 600px;
+
+    @media screen and (max-width: 480px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        height: 400px;
+        }
     }
 
     &__title {
@@ -26,6 +37,13 @@
     max-width: 696px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (max-width: 480px) {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.6154;
+        max-width: 360px;
+        }
     }
 
 }

@@ -328,6 +328,16 @@ input {
   margin: 0 auto;
   padding: 0 15px;
 }
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
 
 .link {
   text-decoration: none;
@@ -388,6 +398,11 @@ input {
 .header__logo {
   margin-right: 93px;
 }
+@media screen and (max-width: 480px) {
+  .header__logo {
+    margin-right: auto;
+  }
+}
 .header__logo span {
   color: var(--logo-black);
 }
@@ -401,6 +416,16 @@ input {
   color: var(--logo-light-blue);
   text-decoration: none;
 }
+@media screen and (max-width: 480px) {
+  .logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1667;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+  }
+}
 
 .nav {
   display: -webkit-box;
@@ -409,6 +434,11 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .nav {
+    display: none;
+  }
 }
 .nav__item:not(:last-child) {
   margin-right: 50px;
@@ -461,6 +491,11 @@ input {
   margin-left: auto;
   gap: 30px;
 }
+@media screen and (max-width: 480px) {
+  .contact-list {
+    display: none;
+  }
+}
 .contact-list__link {
   font-weight: 500;
   font-size: 14px;
@@ -491,6 +526,16 @@ input {
   max-width: 1600px;
   margin: 0 auto;
 }
+@media screen and (max-width: 480px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .hero--container {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -501,6 +546,13 @@ input {
   text-align: center;
   max-width: 1600px;
   height: 600px;
+}
+@media screen and (max-width: 480px) {
+  .hero--container {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: 400px;
+  }
 }
 .hero__title {
   font-weight: 900;
@@ -514,6 +566,14 @@ input {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6154;
+    max-width: 360px;
+  }
 }
 
 .btn--hero {
@@ -531,6 +591,27 @@ input {
   min-width: 216px;
   margin: 0 auto;
   border: none;
+}
+@media screen and (max-width: 480px) {
+  .btn--hero {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 10px 24px;
+    width: 200px;
+    height: 50px;
+  }
 }
 
 .btn--modal-form {

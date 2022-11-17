@@ -9,7 +9,10 @@
 
     &__logo {
         margin-right: 93px;
-        // &--current
+
+        @media screen and (max-width: 480px) {
+            margin-right: auto;
+        }
     }
     
     &__logo span {

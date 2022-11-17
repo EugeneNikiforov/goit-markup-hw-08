@@ -6,4 +6,13 @@
     letter-spacing: 0.03em;
     color: var(--logo-light-blue);
     text-decoration: none;
+
+    @media screen and (max-width: 480px) {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.1667;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 15px;
+    }
 }
