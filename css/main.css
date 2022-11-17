@@ -552,6 +552,8 @@ input {
     padding-top: 118px;
     padding-bottom: 118px;
     height: 400px;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--bgnd-gray-main)), to(var(--bgnd-gray-main))), url(../img/bgnd-head-mobile.jpg);
+    background-image: linear-gradient(to right, var(--bgnd-gray-main), var(--bgnd-gray-main)), url(../img/bgnd-head-mobile.jpg);
   }
 }
 .hero__title {
@@ -609,7 +611,7 @@ input {
     text-align: center;
     letter-spacing: 0.06em;
     padding: 10px 24px;
-    width: 200px;
+    min-width: 200px;
     height: 50px;
   }
 }
