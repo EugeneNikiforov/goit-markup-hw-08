@@ -1,0 +1,38 @@
+.description {
+    background-color: var(--white-color);
+
+    &__list {
+    display: flex;
+    }
+
+    &__item {
+        width: 270px;
+
+        &:not(:last-child) {
+        margin-right: 30px;
+        }
+    }
+
+    &__icon-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: var(--bgnd-light-gray);
+    border-radius: 4px;
+    fill: var(--dark-gray);
+    }
+
+    &__title {
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+    }
+
+    &__text {    
+    font-size: 14px;
+    line-height: 1.7143;
+    letter-spacing: 0.03em;
+    }
+}

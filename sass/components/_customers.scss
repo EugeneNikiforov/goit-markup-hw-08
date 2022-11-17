@@ -1,0 +1,25 @@
+.customers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+
+    &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-gray);
+    border-radius: 4px;
+    fill: var(--icon-gray);
+    transition: fill var(--time) var(--time-effect), border var(--time) var(--time-effect);
+
+        &:hover,&:focus {
+        border: 1px solid var(--selection-color);
+        fill: var(--selection-color);
+        }
+    }
+    
+}

@@ -1,0 +1,18 @@
+.header {
+    border-bottom: 1px solid var(--white-bord);
+    background-color: var(--white-color);
+    
+    &__container {
+            display: flex;
+            align-items: center;
+        }
+
+    &__logo {
+        margin-right: 93px;
+        // &--current
+    }
+    
+    &__logo span {
+        color: var(--logo-black);
+    }
+}

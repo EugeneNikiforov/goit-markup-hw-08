@@ -1,0 +1,33 @@
+:root {
+    --bgnd-gray: #2F303A;
+    --bgnd-gray-main: rgba(47, 48, 58, 0.4);
+    --bgnd-light-blue: rgba(33, 150, 243, 0.9);
+    --bgnd-light-gray: #F5F4FA;
+    --black-color: #000;
+    --dark-gray: #212121;
+    --dark-shadow: rgba(0, 0, 0, 0.15);
+    --light-blue: #2196F3;
+    --light-blue-bord: rgba(33, 150, 243, 1);
+    --light-blue-select: #188CE8;
+    --light-gray: #757575;
+    --light-gray-bord: rgba(255, 255, 255, 0.3);
+    --selection-color: #2196F3;
+    --shadow-bord: rgba(33, 33, 33, 0.2);
+    --white-color: #FFF;
+    --white-bord: #ECECEC;
+    --white-bord-menu: #EEEEEE;
+    /* logo color */
+    --logo-black: #000;
+    --logo-light-blue: #2196F3;
+    --logo-white: #FFF;
+    /* icon color */
+    --icon-dark: rgba(255, 255, 255, 0.1);
+    --icon-gray: #AFB1B8;
+    --icon-white: #fff;
+    /* animation */
+    --time: 250ms;
+    --time-effect: cubic-bezier(0.4, 0, 0.2, 1);
+    /* fonts */
+    --font-roboto: 'Roboto', sans-serif;
+    --font-raleway: 'Raleway', sans-serif;
+}
