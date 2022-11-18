@@ -12,20 +12,20 @@
     padding-top: 118px;
     padding-bottom: 118px;
     height: 400px;
-    background-image: linear-gradient(to right, var(--bgnd-gray-main), var(--bgnd-gray-main)), url(../img/bgnd-head-480.jpg);
+    background-image: linear-gradient(to right, var(--bgnd-gray-main), var(--bgnd-gray-main)), url(../img/head-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
 
     @media screen and (min-width: 768px) {
         background-image: linear-gradient(to right, var(--bgnd-gray-main), var(--bgnd-gray-main)),
-            url(../img/bgnd-head-768.jpg);
+            url(../img/head-tablet.jpg);
         }
 
     @media screen and (min-width:1200px) {
         padding-top: 200px;
         padding-bottom: 200px;
-        background-image: linear-gradient(to right, var(--bgnd-gray-main), var(--bgnd-gray-main)), url(../img/bgnd-head-1600.jpg);
+        background-image: linear-gradient(to right, var(--bgnd-gray-main), var(--bgnd-gray-main)), url(../img/head-desktop.jpg);
         max-width: 1600px;
         height: 600px;
         }

@@ -18,7 +18,8 @@
             <!-- Name -->            
                 <a class="logo header__logo" href="./index.html">Web<span>Studio</span></a>
                 <!-- mobile menu -->
-                <button class="btn btn--header .js-open-menu" type="button">
+                <button class="menu-toggle js-open-menu btn--header" aria-expanded="false"
+                aria-controls="mobile-menu">
                     <svg width="40" height="40">
                         <use xlink:href="./img/icons.svg#icon-menu_40px"></use>
                     </svg>
@@ -373,14 +374,19 @@
         </footer>
         
         <!-- pop-up menu -->
-        <div class="menu-container .js-menu-container" id="mobile-menu">
-            <div class="popup-menu__wrap">
-                <ul class="popup-menu__nav">
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg class="popup-menu__icon" width="40" height="40">
+                    <use xlink:href="./img/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <!-- <div class="popup-menu__wrap"> -->
+                <ul class="mobile-menu">
                     <li>Студія</li>
                     <li>Портфоліо</li>
                     <li>Контакти</li>
                 </ul>
-                <ul class="popup-menu__contact">
+                <!-- <ul class="popup-menu__contact">
                     <li>+38 096 111 11 11</li>
                     <li>info@devstudio.com</li>
                 </ul>
@@ -389,18 +395,14 @@
                     <li>Twitter</li>
                     <li>Facebook</li>
                     <li>LinkedIn</li>
-                </ul>
+                </ul> -->
                 <!-- <button class="btn popup-menu__btn .js-close-menu" type="button">
                     <svg class="popup__icon" width="40" height="40">
                         <use xlink:href="./img/icons.svg#icon-close-black"></use>
                     </svg>
                 </button> -->
-            </div>
-            <button class="btn popup-menu__btn .js-close-menu" type="button">
-                <svg class="popup-menu__icon" width="40" height="40">
-                    <use xlink:href="./img/icons.svg#icon-close-black"></use>
-                </svg>
-            </button>
+            <!-- </div> -->
+            
         </div>
 
         <!-- pop-up window -->
@@ -447,7 +449,7 @@
                 </button>                
             </div>
         </div>
-        <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
