@@ -1,18 +1,44 @@
+// .logo {
+//     font-family: var(--font-raleway);
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 1.1923;
+//     letter-spacing: 0.03em;
+//     color: var(--logo-light-blue);
+//     text-decoration: none;
+
+//     @media screen and (max-width: 767px) {
+//         font-weight: 700;
+//         font-size: 24px;
+//         line-height: 1.1667;
+//         padding-top: 16px;
+//         padding-bottom: 16px;
+//         padding-left: 15px;
+//     }
+// }
+
 .logo {
     font-family: var(--font-raleway);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.1923;
+    font-size: 24px;
+    line-height: 1.1667;
     letter-spacing: 0.03em;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
     color: var(--logo-light-blue);
     text-decoration: none;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 768px) {
         font-weight: 700;
         font-size: 24px;
         line-height: 1.1667;
-        padding-top: 16px;
-        padding-bottom: 16px;
         padding-left: 15px;
     }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.1923;
+        }
 }

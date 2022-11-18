@@ -1,9 +1,65 @@
-.nav {
-    display: flex;
-    align-items: center;
+// .nav {
+//     display: flex;
+//     align-items: center;
 
-    @media screen and (max-width: 480px) {
-        display: none;
+//     @media screen and (max-width: 767px) {
+//         display: none;
+//     }
+
+//     &__item:not(:last-child) {
+//     margin-right: 50px;
+//     }
+
+//     &__item {
+//     position: relative;
+//     }
+    
+//     &__link {
+//     position: relative;
+//     display: block;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.1429;
+//     letter-spacing: 0.02em;
+//     color: var(--dark-gray);
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//     transition: color var(--time) var(--time-effect);
+
+//         &:hover,&:focus {
+//         color: var(--selection-color);
+//         }
+
+//         &:hover::after,
+//         &:focus::after {
+//         transform: scaleX(1);
+//         }
+
+//         &--current {
+//         color: var(--selection-color);
+//         }
+
+//         &--current::after {
+//         position: absolute;
+//         content: "";
+//         display: block;
+//         bottom: -1px;
+//         width: 100%;
+//         height: 4px;
+//         border-radius: 2px;
+//         background: var(--selection-color);
+//         transition: transform var(--time) var(--time-effect);
+//         }
+//     }
+// }
+
+.nav {
+    display: none;
+    
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
     }
 
     &__item:not(:last-child) {

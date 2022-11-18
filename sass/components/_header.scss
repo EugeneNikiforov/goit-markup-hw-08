@@ -1,8 +1,34 @@
+// .header {
+//     border-bottom: 1px solid var(--white-bord);
+//     background-color: var(--white-color);
+
+//     @media screen and (max-width: 767px) {
+//         position: relative;
+//     }
+    
+//     &__container {
+//             display: flex;
+//             align-items: center;
+//         }
+
+//     &__logo {
+//         margin-right: 92px;
+
+//         @media screen and (max-width: 767px) {
+//             margin-right: auto;
+//         }
+//     }
+    
+//     &__logo span {
+//         color: var(--logo-black);
+//     }
+// }
+
 .header {
     border-bottom: 1px solid var(--white-bord);
     background-color: var(--white-color);
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
         position: relative;
     }
     
@@ -12,10 +38,14 @@
         }
 
     &__logo {
-        margin-right: 93px;
+        margin-right: auto;
 
-        @media screen and (max-width: 480px) {
-            margin-right: auto;
+        @media screen and (min-width: 768px) {
+            margin-right: 87px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 92px;
         }
     }
     
