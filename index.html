@@ -105,15 +105,26 @@
             <h2 class="title-section occupation__title">Чим ми займаємося</h2>
             <ul class="occupation__list">
                 <li class="occupation__item">
-                    <img src="./img/occupation1.jpg" alt="Десктопні додатки" width="370" height="294">
+                    <picture>
+                        <source srcset="./img/occupation1.jpg 1x, ./img/occupation1@2x.jpg 2x"
+                            media="(min-width:1200px)" type="image/jpeg" />
+                        <img src="./img/occupation1.jpg" alt="Десктопні додатки">
+                    </picture>
                     <p class="title-uppercase occupation__text">Десктопні додатки</p>                    
                 </li>
                 <li class="occupation__item">
-                    <img src="./img/occupation2.jpg" alt="Мобільні додатки" width="370" height="294">
+                    <picture>
+                        <source srcset="./img/occupation2.jpg 1x, ./img/occupation2@2x.jpg 2x"
+                            media="(min-width:1200px)" type="image/jpeg" />
+                        <img src="./img/occupation2.jpg" alt="Мобільні додатки" width="370" height="294">
+                    </picture>
                     <p class="title-uppercase occupation__text">Мобільні додатки</p>
                 </li>
                 <li class="occupation__item">
-                    <img src="./img/occupation3.jpg" alt="Дизайнерські рішення" width="370" height="294">
+                    <picture>
+                        <source srcset="./img/occupation3.jpg 1x, ./img/occupation3@2x.jpg 2x" media="(min-width:1200px)" type="image/jpeg" />
+                        <img src="./img/occupation3.jpg" alt="Дизайнерські рішення" width="370" height="294">
+                    </picture>
                     <p class="title-uppercase occupation__text">Дизайнерські рішення</p>
                 </li>
             </ul>
@@ -126,7 +137,12 @@
             <ul class="team__list">
                 <li class="team__item">
                     <div class="member">
-                        <img class="member__pic" src="./img/igor-desktop.jpg" alt="Ігор Дем'яненко" width="270" height="260">                    
+                        <picture >
+                            <source srcset="./img/igor-mobile.jpg 1x, ./img/igor-mobile@2x.jpg 2x" media="(max-width:767px)" type="image/jpeg" />
+                            <source srcset="./img/igor-tablet.jpg 1x, ./img/igor-tablet@2x.jpg 2x" media="(min-width:768px) and (max-width:1199px)" type="image/jpeg" />
+                            <source srcset="./img/igor-desktop.jpg 1x, ./img/igor-desktop@2x.jpg 2x" media="(min-width:1200px)" type="image/jpeg" />
+                            <img class="member__pic" src="./img/igor-mobile.jpg" alt="Ігор Дем'яненко">
+                        </picture>                    
                         <div class="member__description">
                             <h3 class="member__name">Ігор Дем'яненко</h3>
                             <p class="member__job-title">Product Designer</p>
@@ -158,7 +174,12 @@
                     
                 <li class="team__item">
                     <div class="member">
-                        <img class="member__pic" src="./img/olga-desktop.jpg" alt="Ольга Рєпіна" width="270" height="260">
+                        <picture>
+                            <source srcset="./img/olga-mobile.jpg 1x, ./img/olga-mobile@2x.jpg 2x" media="(max-width:767px)" type="image/jpeg" />
+                            <source srcset="./img/olga-tablet.jpg 1x, ./img/olga-tablet@2x.jpg 2x" media="(min-width:768px) and (max-width:1199px)" type="image/jpeg" />
+                            <source srcset="./img/olga-desktop.jpg 1x, ./img/olga-desktop@2x.jpg 2x" media="(min-width:1200px)" type="image/jpeg" />
+                            <img class="member__pic" src="./img/olga-mobile.jpg" alt="Ольга Рєпіна">
+                        </picture>
                         <div class="member__description">
                             <h3 class="member__name">Ольга Рєпіна</h3>
                             <p class="member__job-title">Frontend Developer</p>
@@ -198,7 +219,13 @@
                     
                 <li class="team__item">
                     <div class="member">
-                        <img class="member__pic" src="./img/mikola-desktop.jpg" alt="Микола Тарасов" width="270" height="260">                    
+                        <picture>
+                            <source srcset="./img/mikola-mobile.jpg 1x, ./img/mikola-mobile@2x.jpg 2x" media="(max-width:767px)" type="image/jpeg" />
+                            <source srcset="./img/mikola-tablet.jpg 1x, ./img/mikola-tablet@2x.jpg 2x" media="(min-width:768px) and (max-width:1199px)"
+                                type="image/jpeg" />
+                            <source srcset="./img/mikola-desktop.jpg 1x, ./img/mikola-desktop@2x.jpg 2x" media="(min-width:1200px)" type="image/jpeg" />
+                            <img class="member__pic" src="./img/mikola-mobile.jpg" alt="Микола Тарасов">
+                        </picture>                    
                         <div class="member__description">
                             <h3 class="member__name">Микола Тарасов</h3>
                             <p class="member__job-title">Marketing</p>
@@ -229,7 +256,13 @@
                 </li>
                 <li class="team__item">
                     <div class="member">
-                        <img class="member__pic" src="./img/mihailo-desktop.jpg" alt="Михайло Єрмаков" width="270" height="260">
+                        <picture>
+                            <source srcset="./img/mihailo-mobile.jpg 1x, ./img/mihailo-mobile@2x.jpg 2x" media="(max-width:767px)" type="image/jpeg" />
+                            <source srcset="./img/mihailo-tablet.jpg 1x, ./img/mihailo-tablet@2x.jpg 2x" media="(min-width:768px) and (max-width:1199px)"
+                                type="image/jpeg" />
+                            <source srcset="./img/mihailo-desktop.jpg 1x, ./img/mihailo-desktop@2x.jpg 2x" media="(min-width:1200px)" type="image/jpeg" />
+                            <img class="member__pic" src="./img/mihailo-mobile.jpg" alt="Михайло Єрмаков">
+                        </picture>
                         <div class="member__description">
                             <h3 class="member__name">Михайло Єрмаков</h3>
                             <p class="member__job-title">UI Designer</p>

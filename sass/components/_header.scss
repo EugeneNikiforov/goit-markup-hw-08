@@ -39,9 +39,13 @@
 
     &__logo {
         margin-right: auto;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 15px;
 
         @media screen and (min-width: 768px) {
             margin-right: 87px;
+            // padding-left: 15px;
         }
 
         @media screen and (min-width: 1200px) {

@@ -5,13 +5,27 @@
     cursor: pointer;
 }
 
+// .container {
+//     max-width: 767px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+
+//     @media screen and (min-width: 768px) {
+//         max-width: 1199px;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         min-width: 1200px;
+//     }
+// }
+
 .container {
-    max-width: 767px;
+    max-width: 480px;
     margin: 0 auto;
     padding: 0 15px;
 
     @media screen and (min-width: 768px) {
-        max-width: 1199px;
+        max-width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -35,11 +49,17 @@
 
 .title-section {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1667;
+    font-size: 28px;
+    line-height: 1.1786;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--dark-gray);
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1667;
+    }
 }
 
 .title-uppercase {

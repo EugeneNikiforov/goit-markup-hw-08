@@ -70,8 +70,11 @@
 }
 // subscription form
 .btn--subs-form {
+    display: flex;
+    align-items: center;
+    text-align: center;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
     width: 200px;
     height: 50px;
     font-weight: 700;
@@ -84,6 +87,10 @@
     box-shadow: 0px 4px 4px var(--dark-shadow);
     border-radius: 4px;
     border: none;
+
+    @media screen and (min-width: 1200px) {
+        gap: 10px;
+    }
 }
 // button list
 .btn--link-filter {

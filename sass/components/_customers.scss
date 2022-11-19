@@ -3,18 +3,40 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 30px;
+
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+    }
 
     &__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--icon-gray);
     border-radius: 4px;
     fill: var(--icon-gray);
     transition: fill var(--time) var(--time-effect), border var(--time) var(--time-effect);
+    
+    @media screen and (min-width: 768px) {
+        width: 226px;
+        height: 92px;
+        }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+        height: 92px;
+        }
 
         &:hover,&:focus {
         border: 1px solid var(--selection-color);
