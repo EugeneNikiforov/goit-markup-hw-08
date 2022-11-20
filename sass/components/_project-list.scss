@@ -6,8 +6,16 @@
     &__item {
         background: var(--white-color);
         border: 1px solid var(--white-bord-menu);
-        max-width: 370px;
+        max-width: 450px;
         transition: box-shadow var(--time) var(--time-effect);
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            max-width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 370px;
+        }
     }
 
     &__name {

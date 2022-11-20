@@ -972,6 +972,7 @@ input {
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.03em;
+  text-align: center;
   border-radius: 4px;
   color: var(--dark-gray);
   padding: 6px 22px;
@@ -1937,13 +1938,34 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  gap: 8px;
 }
-.link-filter__item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (max-width: 767px) {
+  .link-filter {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px;
+    row-gap: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .link-filter {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link-filter {
+    margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .project {
@@ -1957,11 +1979,21 @@ input {
 .project__item {
   background: var(--white-color);
   border: 1px solid var(--white-bord-menu);
-  max-width: 370px;
+  max-width: 450px;
   -webkit-transition: -webkit-box-shadow var(--time) var(--time-effect);
   transition: -webkit-box-shadow var(--time) var(--time-effect);
   transition: box-shadow var(--time) var(--time-effect);
   transition: box-shadow var(--time) var(--time-effect), -webkit-box-shadow var(--time) var(--time-effect);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__item {
+    max-width: 370px;
+  }
 }
 .project__name {
   padding-left: 24px;
