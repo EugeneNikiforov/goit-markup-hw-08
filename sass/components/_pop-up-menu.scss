@@ -1,13 +1,15 @@
-// .popup-menu {
-//     // display: flex;
-//     position: fixed;
-//     overflow: hidden;
-//     top: 0;
-//     left: 0;
-//     width: 100vw;
-//     height: 100vh;
-//     padding: 32px;
-//     z-index: 999;
+.popup-menu {
+    background-color: var(--white-color);
+    position: reliative;
+    // display: flex;
+    // position: fixed;
+    // overflow: hidden;
+    // top: 0;
+    // left: 0;
+    // width: 100vw;
+    // height: 100vh;
+    // padding: 32px;
+    // z-index: 999;
 
 //     &__wrap {
 //         position: absolute;
@@ -20,30 +22,30 @@
 //         transition: transform var(--time) var(--time-effect);
 //     }
 
-//     &__btn {
-//         justify-content: center;
-//         position: absolute;
-//         top: 30px;
-//         right: 35px;
-//         width: 40px;
-//         height: 40px;
-//         border: 1px solid transparent;
-//         background-color: transparent;
-//         padding: 0;
-//         fill: var(--dark-gray);
-//         transition: fill var(--time) var(--time-effect);
+    &__btn {
+        justify-content: center;
+        position: absolute;
+        top: 3px;
+        right: 23px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid transparent;
+        background-color: transparent;
+        padding: 0;
+        fill: var(--dark-gray);
+        transition: fill var(--time) var(--time-effect);
         
-//         &:hover,
-//         &:focus {
-//             fill: var(--selection-color);
-//         }
-//     }
+        &:hover,
+        &:focus {
+            fill: var(--selection-color);
+        }
 
-//     &__icon {
-//         width: 18px;
-//         height: 18px;
-//     }
-// }
+    &__icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+}
 
 .menu-container {
     position: fixed;
@@ -52,7 +54,6 @@
     width: 100vw;
     height: 100vh;
     padding: 32px;
-    background-color: #3f51b5;
     z-index: 999;
 
     transform: translateX(100%);
@@ -63,22 +64,19 @@
     transform: translateX(0);
 }
 
-.menu-container .menu-toggle {
+.menu-container {
     position: absolute;
     top: 16px;
     right: 16px;
-    color: #fff;
 }
 
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin: 0;
-    padding: 0;
+    // margin: 0;
+    // padding: 0;
     background-color: transparent;
     cursor: pointer;
     border: none;
@@ -90,11 +88,6 @@
     .menu-toggle {
         display: none;
     }
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .mobile-menu {

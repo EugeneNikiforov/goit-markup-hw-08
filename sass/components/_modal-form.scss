@@ -1,17 +1,31 @@
 .modal-form {
     padding: 40px 40px;
-    max-width: 528px;
+    
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        max-width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 528px;
+    }
 
     &__header {
         font-weight: 700;
         font-size: 20px;
-        line-height: 1.15;
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--dark-gray);
         display: block;
         margin-top: 0;
         margin-bottom: 12px;
+
+        @media screen and (min-width: 480px) and (max-width: 1199px) {
+            line-height: 1.5;
+        }
+
+        @media screen and (min-width: 1200px) {
+            line-height: 1.15;
+        }
     }
 
     &__input {
@@ -84,9 +98,14 @@
         justify-content: flex-start;
         /* gap: 8.38px; */
         margin-top: 20px;
-        margin-left: 12px;
-        height: 24px;
+        margin-left: 8px;
+        height: 15px;
         margin-bottom: 30px;
+
+        @media screen and (min-width: 1200px) {
+            height: 24px;
+            margin-left: 12px;
+        }
 
         & label {
             position: relative;
@@ -94,8 +113,8 @@
 
         & label::before {
             position: absolute;
-            top: 5px;
-            left: 2px;
+            top: 0;
+            left: -7px;
             display: inline-block;
             content: "";
             width: 16px;
@@ -105,6 +124,11 @@
             margin-right: 7px;
             cursor: pointer;
             transition: background-color var(--time) var(--time-effect), border var(--time) var(--time-effect);
+
+            @media screen and (min-width: 1200px) {
+                top: 4px;
+                left: 0;
+            }
         }
 
         & input:checked+label::before {
@@ -118,10 +142,17 @@
 
     &__checkbox-label {
         display: inline-block;
-        font-size: 14px;
-        line-height: 1.7143;
+        font-size: 12px;
+        line-height: 1.1667;
         letter-spacing: 0.03em;
-        padding-left: 25px;
+        padding-left: 15px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.7143;
+            letter-spacing: 0.03em;
+            padding-left: 25px;
+        }
     }
 
     &__checkbox-link {

@@ -46,7 +46,6 @@
 .btn--modal-form {
     justify-content: center;
     margin-bottom: 0;
-    margin-left: 124px;
     width: 200px;
     height: 50px;
     font-weight: 700;
@@ -60,6 +59,14 @@
     padding: 10px 52px;
     border: none;
     transition: background-color var(--time) var(--time-effect), color var(--time) var(--time-effect);
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        margin-left: 85px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: 124px;
+    }
     
     &:hover,&:focus {
         background-color: var(--light-blue-select);
