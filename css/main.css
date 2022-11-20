@@ -413,11 +413,6 @@ input {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header__container {
-    max-width: 1199px;
-  }
-}
 .header__logo {
   margin-right: auto;
   padding-top: 16px;
