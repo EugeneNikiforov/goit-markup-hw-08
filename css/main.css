@@ -468,6 +468,7 @@ input {
       -ms-flex-direction: column;
           flex-direction: column;
   max-height: 100%;
+  overflow: hidden;
 }
 .popup-menu__btn {
   -webkit-box-pack: center;
@@ -618,110 +619,6 @@ input {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.test-menu {
-  background-color: var(--white-color);
-  padding: 48px 40px;
-  position: relative;
-}
-@media screen and (min-width: 480px) {
-  .test-menu {
-    width: 480px;
-    max-height: 100%;
-  }
-}
-.test-menu__btn {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  border: 1px solid transparent;
-  background-color: transparent;
-  padding: 0;
-  fill: var(--dark-gray);
-  -webkit-transition: fill var(--time) var(--time-effect);
-  transition: fill var(--time) var(--time-effect);
-}
-.test-menu__btn:hover, .test-menu__btn:focus {
-  fill: var(--selection-color);
-}
-.test-menu__icon {
-  width: 30px;
-  height: 30px;
-}
-.test-menu__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 0;
-  margin-left: 0;
-  margin-bottom: 302px;
-  gap: 32px;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
-  letter-spacing: 0.02em;
-}
-.test-menu__contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 0;
-  margin-bottom: 64px;
-  gap: 32px;
-}
-.test-menu__socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 0;
-  margin-left: 0;
-  gap: 20px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2222;
-  letter-spacing: 0.02em;
-}
-.test-menu__socials a {
-  color: var(--light-blue);
-}
-.test-menu__socials a:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-.test-menu__link {
-  color: var(--dark-gray);
-}
-.test-menu__link--current {
-  color: var(--selection-color);
-}
-.test-menu__tel {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1765;
-  letter-spacing: 0.02em;
-  color: var(--light-blue);
-}
-.test-menu__mail {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.1667;
-  letter-spacing: 0.02em;
-  color: var(--light-gray);
 }
 
 .nav {
