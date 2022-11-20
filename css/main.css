@@ -467,8 +467,13 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-height: 100%;
-  overflow: hidden;
+  overflow: auto;
+  gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .popup-menu {
+    display: none;
+  }
 }
 .popup-menu__btn {
   -webkit-box-pack: center;
@@ -510,6 +515,12 @@ input {
   line-height: 1.175;
   letter-spacing: 0.02em;
 }
+@media screen and (max-width: 320px) {
+  .popup-menu__nav {
+    font-size: 26px;
+    gap: 20px;
+  }
+}
 .popup-menu__contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,7 +541,7 @@ input {
       flex-wrap: wrap;
   margin-bottom: 0;
   margin-left: 0;
-  gap: 20px;
+  gap: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2222;
@@ -539,7 +550,8 @@ input {
 .popup-menu__socials a {
   color: var(--light-blue);
 }
-.popup-menu__socials a:not(:last-child) {
+.popup-menu__item:not(:last-child) {
+  padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .popup-menu__link {
@@ -559,12 +571,22 @@ input {
   letter-spacing: 0.02em;
   color: var(--light-blue);
 }
+@media screen and (max-width: 320px) {
+  .popup-menu__tel {
+    font-size: 22px;
+  }
+}
 .popup-menu__mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.1667;
   letter-spacing: 0.02em;
   color: var(--light-gray);
+}
+@media screen and (max-width: 320px) {
+  .popup-menu__mail {
+    font-size: 20px;
+  }
 }
 
 .menu-container {
@@ -577,10 +599,10 @@ input {
   background-color: var(--white-color);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: -webkit-transform var(--time) ease-in-out;
-  transition: -webkit-transform var(--time) ease-in-out;
-  transition: transform var(--time) ease-in-out;
-  transition: transform var(--time) ease-in-out, -webkit-transform var(--time) ease-in-out;
+  -webkit-transition: -webkit-transform var(--time) var(--time-effect);
+  transition: -webkit-transform var(--time) var(--time-effect);
+  transition: transform var(--time) var(--time-effect);
+  transition: transform var(--time) var(--time-effect), -webkit-transform var(--time) var(--time-effect);
 }
 
 .menu-container.is-open {

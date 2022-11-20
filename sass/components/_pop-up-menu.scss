@@ -3,9 +3,9 @@
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
-    max-height: 100%;
-    // position: fixed;
-    overflow: hidden;
+    // max-height: 100%;
+    overflow: auto;
+    gap: 10px;
     // top: 0;
     // left: 0;
     // width: 100vw;
@@ -13,9 +13,9 @@
     // padding: 32px;
     // z-index: 999;
 
-    // @media screen and (min-width: 480px) {
-    //     max-height: 100%;
-    // }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 
 //     &__wrap {
 //         position: absolute;
@@ -41,8 +41,7 @@
         fill: var(--dark-gray);
         transition: fill var(--time) var(--time-effect);
         
-        &:hover,
-        &:focus {
+        &:hover,&:focus {
             fill: var(--selection-color);
         }
     }
@@ -62,6 +61,11 @@
         font-size: 40px;
         line-height: 1.175;
         letter-spacing: 0.02em;
+
+        @media screen and (max-width: 320px) {
+            font-size: 26px;
+            gap: 20px;
+        }
     }
 
     &__contact {
@@ -77,7 +81,7 @@
         flex-wrap: wrap;
         margin-bottom: 0;
         margin-left: 0;
-        gap: 20px;
+        gap: 10px;
         font-weight: 500;
         font-size: 18px;
         line-height: 1.2222;
@@ -86,10 +90,11 @@
         & a {
             color: var(--light-blue);
         }
-        
-        & a:not(:last-child) {
-            border-right: 1px solid rgba(33, 33, 33, 0.2);
-        }
+    }
+
+    &__item:not(:last-child) {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
 
     &__link {
@@ -108,6 +113,10 @@
         line-height: 1.1765;
         letter-spacing: 0.02em;
         color: var(--light-blue);
+
+        @media screen and (max-width: 320px) {
+            font-size: 22px;
+        }
     }
     
     &__mail {
@@ -116,6 +125,10 @@
         line-height: 1.1667;
         letter-spacing: 0.02em;
         color: var(--light-gray);
+
+        @media screen and (max-width: 320px) {
+            font-size: 20px;
+        }
     }
 }
 
@@ -129,9 +142,8 @@
     // padding: 32px;
     z-index: 999;
     background-color: var(--white-color);
-
     transform: translateX(100%);
-    transition: transform var(--time) ease-in-out;
+    transition: transform var(--time) var(--time-effect);
 }
 
 .menu-container.is-open {
