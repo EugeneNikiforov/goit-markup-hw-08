@@ -18,8 +18,7 @@
             <!-- Name -->            
                 <a class="logo header__logo" href="./index.html">Web<span>Studio</span></a>
                 <!-- mobile menu -->
-                <button class="menu-toggle js-open-menu" aria-expanded="false"
-                aria-controls="mobile-menu">
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                     <svg width="40" height="40">
                         <use xlink:href="./img/icons.svg#icon-menu_40px"></use>
                     </svg>
@@ -413,30 +412,84 @@
                     <use xlink:href="./img/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
-            <!-- <div class="popup-menu__wrap"> -->
-                <ul class="mobile-menu">
-                    <li>Студія</li>
-                    <li>Портфоліо</li>
-                    <li>Контакти</li>
+            <!-- <div class="popup-menu"> -->
+                <ul class="popup-menu__nav">
+                    <li class="popup-menu__item">
+                        <a href="./index.html" target="_self" class="popup-menu__link--current link">Студія</a>
+                    </li>
+                    <li class="popup-menu__item">
+                        <a href="./portfolio.html" target="_self" class="popup-menu__link link">Портфоліо</a>
+                    </li>
+                    <li class="popup-menu__item">
+                        <a href="#" target="_self" class="popup-menu__link link">Контакти</a>
+                    </li>
                 </ul>
-                <!-- <ul class="popup-menu__contact">
-                    <li>+38 096 111 11 11</li>
-                    <li>info@devstudio.com</li>
+                <ul class="popup-menu__contact">
+                    <li class="popup-menu__item">
+                        <a href="tel:+380961111111" class="popup-menu__tel link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="popup-menu__item">
+                        <a href="mailto:info@devstudio.com" class="popup-menu__mail link">info@devstudio.com</a>
+                    </li>
                 </ul>
                 <ul class="popup-menu__socials">
-                    <li>Instagram</li>
-                    <li>Twitter</li>
-                    <li>Facebook</li>
-                    <li>LinkedIn</li>
-                </ul> -->
-                <!-- <button class="btn popup-menu__btn .js-close-menu" type="button">
-                    <svg class="popup__icon" width="40" height="40">
-                        <use xlink:href="./img/icons.svg#icon-close-black"></use>
-                    </svg>
-                </button> -->
+                    <li class="popup-menu__item">
+                        <a href="#" class="link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </li>
+                    <li class="popup-menu__item">
+                        <a href="#" class="link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    </li>
+                    <li class="popup-menu__item">
+                        <a href="#" class="link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    </li>
+                    <li class="popup-menu__item">
+                        <a href="#" class="link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </li>
+                </ul>
             <!-- </div> -->
-            
         </div>
+
+        <!-- experimental menu -->
+        <!-- <div class="test-menu">
+            <button class="btn test-menu__btn">
+                <svg class="test-menu__icon" width="40" height="40">
+                    <use xlink:href="./img/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <ul class="test-menu__nav">
+                <li class="test-menu__item">
+                    <a href="./index.html" target="_self" class="test-menu__link--current link">Студія</a>
+                </li>
+                <li class="test-menu__item">
+                    <a href="./portfolio.html" target="_self" class="test-menu__link link">Портфоліо</a>
+                </li>
+                <li class="test-menu__item">
+                    <a href="#" target="_self" class="test-menu__link link">Контакти</a>
+                </li>
+            </ul>
+            <ul class="test-menu__contact">
+                <li class="test-menu__item">
+                    <a href="tel:+380961111111" class="test-menu__tel link">+38 096 111 11 11</a>
+                </li>
+                <li class="test-menu__item">
+                    <a href="mailto:info@devstudio.com" class="test-menu__mail link">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="test-menu__socials">
+                <li class="test-menu__item">
+                    <a href="#" class="link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </li>
+                <li class="test-menu__item">
+                    <a href="#" class="link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </li>
+                <li class="test-menu__item">
+                    <a href="#" class="link" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </li>
+                <li class="test-menu__item">
+                    <a href="#" class="link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+            </ul>
+        </div> -->
 
         <!-- pop-up window -->
         <div class="backdrop is-hidden" data-modal>

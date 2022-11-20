@@ -33,9 +33,13 @@
     }
     
     &__container {
-            display: flex;
-            align-items: center;
+        display: flex;
+        align-items: center;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            max-width: 1199px;
         }
+    }
 
     &__logo {
         margin-right: auto;
